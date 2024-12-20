@@ -12,7 +12,7 @@ body {
   header {
     text-align: center;
     background-color: #6200ea;
-    color: white;
+    color: rgb(101, 228, 51);
     padding: 20px;
   }
   
@@ -20,7 +20,7 @@ body {
   footer {
     text-align: center;
     background-color: #6200ea;
-    color: white;
+    color: rgb(101, 228, 51);
     padding: 10px;
   }
   
@@ -62,4 +62,3 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  
