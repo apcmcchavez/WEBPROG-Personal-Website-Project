@@ -1,0 +1,119 @@
+.about-me-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-me-bg .stars-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url('images/abt me.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.about-me-bg .overlay-me .personal-img {
+    position: absolute;
+    width: 596.25px;
+    height: 806px;
+    left: 187.75px;
+    top: 139px;
+    z-index: 5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+}
+
+
+.about-me-title h1 {
+  position: absolute;
+  width: 787px;
+  height: 103px;
+  left: 845px;
+  top: 250px;
+  color: #340B3C;
+
+  font-family: 'Jersey 10';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 103px;
+}
+
+/* supposed to be typing effect */
+/* the color of the text na matatype na bago would be #A64385 */
+.about-me-title h2 {         
+  position: absolute;
+  width: 787px;
+  height: 103px;
+  left: 845px;
+  top: 335px;
+  
+  font-family: 'Jersey 10';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 39px;
+  
+  color: #6B2855;
+  
+  
+}
+
+.about-me-title p {
+position: absolute;
+width: 665px;
+height: 273px;
+left: 860px;
+top: 405px;
+
+font-family: 'Jersey 10';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 39px;
+
+color: #0B0B0B;
+}
+
+.about-me-title .semi-transparent-rectangle {
+  position: absolute;
+  width: 700px;
+  height: 300px;
+  left: 840px;
+  top: 395px;
+  
+  background: rgba(217, 217, 217, 0.65);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+
+}
+
+
+.about-me-title .social-links img {
+  width: 61.8px; /* Standardize width */
+  height: 60px; /* Standardize height */
+  margin: 0 2px; /* Add space between icons */
+  display: inline-block; /* Ensure icons are inline */
+  transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease;
+}
+
+.about-me-title .social-links {
+  position: absolute;
+  left: 940px;
+  top: 715px; /* Adjust to fit your layout */
+  transform: translateX(-50%); /* Center align the links */
+  z-index: 10; /* Ensure visibility */
+}
+
+
+.social-links img:hover {
+  transform: scale(0.8); /* Shrinks the icon */
+  background-color: rgba(255, 255, 255, 0.4); /* White overlay effect */
+  border-radius: 25%; /* Makes the overlay circular */
+}
