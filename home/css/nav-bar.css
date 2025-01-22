@@ -11,17 +11,11 @@
     align-items: center;
     padding: 10px 20px;
     background-color: #340B3C;
-    /* Deep purple background */
     position: fixed;
-    /* Keeps the navigation bar fixed at the top */
     top: 0;
-    /* Sticks it to the very top of the page */
     width: 100%;
-    /* Ensures the bar stretches across the screen */
     z-index: 1000;
-    /* Ensures it stays above other elements */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: subtle shadow for better visibility */
 }
 
 .nav-logo {
@@ -31,6 +25,16 @@
     font-weight: bold;
     color: #ffffff;
     /* White text color for logo */
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent element */
+    transition: color 0.3s ease;
+}
+
+.nav-logo a:hover {
+    color: #c4aaeb; 
 }
 
 .nav-menu {
@@ -43,7 +47,6 @@
     list-style: none;
     display: flex;
     gap: 15px;
-    /* Spacing between folder items */
 }
 
 .nav-item {
@@ -76,7 +79,6 @@
 .nav-item:hover img,
 .nav-item img.active {
     transform: scale(1.1);
-    /* Slight zoom effect for emphasis */
 }
 
 .nav-link {
@@ -84,11 +86,6 @@
     text-decoration: none;
     font-size: 0.9rem;
     color: transparent;
-    /* Hides text labels */
-}
-
-.nav-toggle {
-    display: none;
 }
 
 /* Responsive Design */
@@ -108,10 +105,5 @@
 
     .nav-menu.show-menu {
         display: flex;
-    }
-
-    .nav-toggle {
-        display: block;
-        font-size: 1.5rem;
     }
 }
