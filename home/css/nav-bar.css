@@ -23,18 +23,24 @@
     font-style: normal;
     font-size: 65px;
     font-weight: bold;
-    color: #ffffff;
-    /* White text color for logo */
+    color: #ffffff; /* White text color for logo */
 }
 
 .nav-logo a {
-    text-decoration: none;
+    text-decoration: none; /* Removes underline */
     color: inherit; /* Inherit color from parent element */
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .nav-logo a:hover {
-    color: #c4aaeb; 
+    color: #c4aaeb; /* Light purple color on hover */
+}
+
+.nav-logo a:visited,
+.nav-logo a:active,
+.nav-logo a:focus {
+    text-decoration: none; /* Ensure no underline in all states */
+    color: inherit; /* Keep the color consistent */
 }
 
 .nav-menu {
