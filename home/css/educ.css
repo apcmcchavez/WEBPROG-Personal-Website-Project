@@ -1,0 +1,115 @@
+/* Education Section */
+#education {
+    position: relative; /* Set the section as a relative container */
+    padding: 0; /* Remove extra spacing to fit the background */
+  }
+  
+  /* Background Image */
+  .stars-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the section */
+    z-index: 1; /* Place it behind other content */
+  }
+  
+  /* Overlay Content */
+  .overlay-educ {
+    position: relative; /* Content stays above the background */
+    z-index: 2; /* Ensure it's above the background image */
+    padding: 40px; /* Add some spacing around the content */
+    text-align: center; /* Center-align the content */
+  }
+  
+  /* Headings */
+  #education h1 {
+    font-family: 'Jersey 10';
+    font-weight: 400;
+    font-size: 55px;
+    color: #340B3C;
+    margin-bottom: 5px;
+  }
+  
+  #education p {
+    font-family: 'Jersey 10';
+    font-weight: 400;
+    font-size: 25px;
+    color: #0B0B0B;
+    margin-bottom: 30px;
+  }
+  
+  /* Carousel Container */
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrolling if present */
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+  
+  /* Hide Scrollbar */
+  .carousel-container::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+    height: 5px; /* Adjust height for a thin bar */
+  }
+  
+  .carousel-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); /* Subtle scrollbar thumb color */
+    border-radius: 10px;
+  }
+  
+  .carousel-container::-webkit-scrollbar-track {
+    background: transparent; /* Transparent scrollbar track */
+  }
+  
+  /* Carousel Wrapper */
+  .carousel {
+    display: flex;
+    gap: 10px;
+    animation: none; /* Remove infinite animation */
+  }
+  
+  /* Carousel Images */
+  .carousel img {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .carousel {
+      flex-direction: row; /* Ensure horizontal layout on small screens */
+      gap: 5px;
+    }
+  
+    .carousel img {
+      max-width: 80%; /* Adjust image width for mobile */
+      height: auto;
+    }
+  }
+  
+  
+  .overlay-educ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.644), rgba(255, 255, 255, 0)); 
+    z-index: -1; /* Place it behind the content */
+  }
+  
