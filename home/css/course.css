@@ -77,3 +77,15 @@
     line-height: 40px;
     color: #0B0B0B;
 }
+
+.overlay-course::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, rgba(52, 11, 60, 0.6), rgba(52, 11, 60, 0)); /* Adjusted to use #340B3C */
+    z-index: -1; /* Place it behind the content */
+  }
+  
