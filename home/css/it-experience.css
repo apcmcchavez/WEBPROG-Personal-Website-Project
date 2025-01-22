@@ -1,0 +1,83 @@
+/* Container for the IT Experience background */
+.it-exp-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Background image - Grid */
+.it-exp-bg .grid-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url('images/grid.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay Content */
+.it-exp-bg .overlay-it-exp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensures the overlay images are above the grid */
+}
+
+/* Curve Image */
+.it-exp-bg .overlay-it-exp .curve-bg {
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the grid */
+    left: 0;
+    width: 100%;
+    height: auto; /* Adjust height automatically based on aspect ratio */
+    z-index: 2;
+}
+
+/* Shapes Image */
+.it-exp-bg .overlay-it-exp .shapes-bg {
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the grid */
+    left: 81%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust alignment for centering */
+    width: auto; /* Maintain aspect ratio */
+    height: 500px; /* Set desired height */
+    z-index: 2;
+    object-fit: contain;
+}
+
+
+/* IT Experience Title */
+.it-exp-title h1 {
+    position: absolute;
+    top: 32%;
+    left: 15%;
+    transform: translateX(-50%);
+    font-family: 'Jersey 10';
+    font-size: 75px;
+    z-index: 3;
+    color: #340B3C;
+    text-align: left;
+}
+
+/* IT Experience Paragraph */
+.it-exp-title p {
+    position: absolute;
+    top: 42%;
+    left: 25.8%;
+    transform: translateX(-50%);
+    width: 40%;
+    font-family: 'Jersey 10';
+    font-size: 45px;
+    z-index: 3;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
